@@ -8,9 +8,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
-import java.net.MalformedURLException;
-
 public class LoginStepDefinition {
 
     WebDriver driver;
