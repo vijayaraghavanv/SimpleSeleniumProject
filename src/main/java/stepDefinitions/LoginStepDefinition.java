@@ -4,15 +4,10 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import junit.framework.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.interactions.Actions;
 
 import java.net.MalformedURLException;
 
@@ -22,7 +17,7 @@ public class LoginStepDefinition {
 
 
     @Given("^user gets logged in$")
-    public void user_already_on_login_page() throws MalformedURLException {
+    public void user_already_on_login_page() {
         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         //WebDriverManager.chromedriver().setup();
 //	 DesiredCapabilities capabilities=new DesiredCapabilities();
